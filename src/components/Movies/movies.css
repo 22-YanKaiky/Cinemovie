@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    background-color: #0c0b0b;
+    color: white;
+}
+
+div.card {
+    display: flex;
+    margin: 1rem;
+    background-color: #141414;
+    border-radius: 20px;
+}
+
+div.card > header.card-folder > img {
+    width: 250px;
+    margin: 17px;
+    border-radius: 10px;
+}
+
+div.card > header.card-folder {
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+
+div.card > section.card-information {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: justify;
+}
+
+div.card > section.card-information > h1 {
+    font-size: 20pt;
+    text-align: center;
+}
+
+div.card > section.card-information > p {
+    margin-top: 2rem;
+    color: #87878d;
+}
+
+div.card > section.card-trailer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 15px;
+}
