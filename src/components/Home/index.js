@@ -6,7 +6,7 @@ import SERIESAPI from "../../services/SeriesAPI";
 import axios from "axios";
 
 export default function Home() {
-    const [movies, setMovies] = useState([])
+  const [movies, setMovies] = useState([])
   const [series, setSeries] = useState([])
 
   useEffect(() => {
@@ -28,9 +28,9 @@ export default function Home() {
 
     Series()
   }, []);
-    
-    return (
-        <div className="App">
+
+  return (
+    <div className="App">
       {movies.map((movie) => (
         <Movies
           name={movie.name}
@@ -52,6 +52,7 @@ export default function Home() {
           name={serie.name}
           src={serie.folder}
           year={serie.year}
+          genre={serie.genre}
           seasons={serie.seasons}
           episodes={serie.episodes}
           synopsis={serie.synopsis}
@@ -59,5 +60,5 @@ export default function Home() {
         />
       ))}
     </div>
-    )
+  )
 }

@@ -2,6 +2,17 @@ import React from "react";
 import "./series.css";
 
 export default function Series(card) {
+    function Season() {
+        let season;
+        if (card.seasons !== 1) {
+            season = "Temporadas"
+        } else {
+            season = "Temporada"
+        }
+
+        return `${card.seasons} ${season}` 
+    }
+
     return (
         <div className="card">
             <header className="card-folder">
@@ -10,9 +21,9 @@ export default function Series(card) {
 
             <section className="card-information">
                 <h1>{card.name}</h1>
-                <p>Ano: <strong>{card.year}</strong></p>
-                <p>Temporadas: <strong>{card.seasons}</strong></p>
-                <p>Episódios: <strong>{card.episodes}</strong></p>
+                <p><strong>Ano: </strong>{card.year}</p>
+                <p><strong>Gênero: </strong>{card.genre} ‧ {Season()}</p>
+                <p><strong>Episódios: </strong>{card.episodes}</p>
                 <p>{card.synopsis}</p>
             </section>
 
