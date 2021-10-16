@@ -35,6 +35,8 @@ export default function Home() {
         <Movies
           name={movie.name}
           src={movie.folder}
+          genre={movie.genre}
+          time={movie.time}
           year={movie.year}
           synopsis={movie.synopsis}
           trailer={movie.trailer}

@@ -12,7 +12,8 @@ export default function Movies(card) {
 
                 <section className="card-information">
                     <h1>{card.name}</h1>
-                    <p>Ano: <strong>{card.year}</strong></p>
+                    <p><strong>Ano: </strong>{card.year}</p>
+                    <p><strong>Gênero: </strong>{card.genre} ‧ {card.time}</p>
                     <p>{card.synopsis}</p>
                 </section>
 
