@@ -45,6 +45,7 @@ div.card > section.card-information > h1 {
 div.card > section.card-information > p {
     margin-top: 2rem;
     color: #87878d;
+    margin-right: 15px;
 }
 
 div.card > section.card-trailer {
