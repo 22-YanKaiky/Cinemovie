@@ -3,6 +3,7 @@ import Navbar from "../Navbar";
 import Animes from "../Animes";
 import Movies from "../Movies";
 import Series from "../Series";
+import Avatar from "../../icons/avatar.jpg"
 import ANIMESAPI from "../../services/AnimesAPI";
 import MOVIESAPI from "../../services/MoviesAPI";
 import SERIESAPI from "../../services/SeriesAPI";
@@ -17,7 +18,6 @@ export default function Home() {
     async function Animes() {
       let results = await axios.get(ANIMESAPI)
       setAnimes(results.data)
-      console.log(results.data)
     }
 
     Animes()
@@ -27,7 +27,6 @@ export default function Home() {
     async function Movies() {
       let results = await axios.get(MOVIESAPI)
       setMovies(results.data)
-      console.log(results.data)
     }
 
     Movies()
@@ -37,7 +36,6 @@ export default function Home() {
     async function Series() {
       let results = await axios.get(SERIESAPI)
       setSeries(results.data)
-      console.log(results.data)
     }
 
     Series()
@@ -45,8 +43,10 @@ export default function Home() {
 
   return (
     <div className="App">
-      <Navbar />
-      <h1>ANIMES</h1>
+      <Navbar 
+        src={Avatar}
+      />
+
       {animes.map((anime) => (
         <Animes
           name={anime.name}
@@ -59,8 +59,6 @@ export default function Home() {
           trailer={anime.trailer}
         />
       ))}
-      
-        <h1>FILMES</h1>
 
       {movies.map((movie) => (
         <Movies
@@ -73,8 +71,6 @@ export default function Home() {
           trailer={movie.trailer}
         />
       ))}
-
-        <h1>SÉRIES</h1>
 
       {series.map((serie) => (
         <Series
