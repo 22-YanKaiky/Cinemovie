@@ -55,6 +55,7 @@ export default function Home() {
           genre={anime.genre}
           seasons={anime.seasons}
           episodes={anime.episodes}
+          direction={anime.direction}
           synopsis={anime.synopsis}
           trailer={anime.trailer}
         />
@@ -67,6 +68,7 @@ export default function Home() {
           genre={movie.genre}
           time={movie.time}
           year={movie.year}
+          direction={movie.direction}
           synopsis={movie.synopsis}
           trailer={movie.trailer}
         />
@@ -80,6 +82,7 @@ export default function Home() {
           genre={serie.genre}
           seasons={serie.seasons}
           episodes={serie.episodes}
+          direction={serie.direction}
           synopsis={serie.synopsis}
           trailer={serie.trailer}
         />

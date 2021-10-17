@@ -3,11 +3,10 @@ import Cinemovie from "../../icons/cinemovie.png";
 import "./navbar.css";
 
 export default function Navbar(nav) {
-    
     return (
         <div className="navbar">
             <header>
-                <img src={Cinemovie} al="Cinemovie"/>
+                <img src={Cinemovie} alt="Cinemovie"/>
             </header>
 
             <section className="tool-bar">

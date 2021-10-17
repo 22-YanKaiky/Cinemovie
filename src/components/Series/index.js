@@ -24,7 +24,8 @@ export default function Series(card) {
                 <p><strong>Ano: </strong>{card.year}</p>
                 <p><strong>Gênero: </strong>{card.genre} ‧ {Season()}</p>
                 <p><strong>Episódios: </strong>{card.episodes}</p>
-                <p>{card.synopsis}</p>
+                <p><strong>Direção: </strong>{card.direction}</p>
+                <p><strong>Sinopse: </strong>{card.synopsis}</p>
             </section>
 
             <section className="card-trailer">

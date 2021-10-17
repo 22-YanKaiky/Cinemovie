@@ -13,7 +13,8 @@ export default function Movies(card) {
                 <h1>{card.name}</h1>
                 <p><strong>Ano: </strong>{card.year}</p>
                 <p><strong>Gênero: </strong>{card.genre} ‧ {card.time}</p>
-                <p>{card.synopsis}</p>
+                <p><strong>Direção: </strong>{card.direction}</p>
+                <p><strong>Sinopse: </strong>{card.synopsis}</p>
             </section>
 
             <section className="card-trailer">
