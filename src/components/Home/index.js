@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+/* import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar";
 import Animes from "../Animes";
 import Movies from "../Movies";
@@ -87,6 +87,30 @@ export default function Home() {
           trailer={serie.trailer}
         />
       ))}
+    </div>
+  )
+} */
+
+import React from "react";
+import Cinemovie from "../../icons/cinemovie.png";
+import "./home.css";
+
+export default function Home() {
+  return (
+    <div className="card-index">
+      <div className="card-img">
+        <img src={Cinemovie} alt="Cinemovie" />
+      </div>
+
+      <div className="div-cards">
+        <input type="button" value="Animes"/>
+        <input type="button" value="Filmes"/>
+        <input type="button" value="Séries"/>
+      </div>
+
+      <div className="div-button">
+        <button>Sugestões</button>
+      </div>
     </div>
   )
 }

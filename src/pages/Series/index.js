@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SERIESAPI from "../../services/SeriesAPI";
 import Series from "../../components/Series";
 import Navbar from "../../components/Navbar";

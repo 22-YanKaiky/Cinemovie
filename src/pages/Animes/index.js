@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ANIMESAPI from "../../services/AnimesAPI";
 import Animes from "../../components/Animes";
 import Navbar from "../../components/Navbar";
