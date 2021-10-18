@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SERIESAPI from "../../services/SeriesAPI";
 import Series from "../../components/Series";
-import Navbar from "../../components/Navbar";
-import Avatar from "../../icons/avatar.jpg";
 import axios from "axios";
 
 export default function PageSeries() {
@@ -19,10 +17,6 @@ export default function PageSeries() {
 
     return (
         <div>
-            <Navbar
-                src={Avatar}
-            />
-
             {series.map((serie) => (
                 <Series
                     name={serie.name}

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ANIMESAPI from "../../services/AnimesAPI";
 import Animes from "../../components/Animes";
-import Navbar from "../../components/Navbar";
-import Avatar from "../../icons/avatar.jpg"
 import axios from "axios";
 
 export default function PageAnimes() {
@@ -19,9 +17,6 @@ export default function PageAnimes() {
 
     return (
         <div>
-            <Navbar
-                src={Avatar}
-            />
             {animes.map((anime) => (
                 <Animes
                     name={anime.name}
