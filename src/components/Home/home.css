@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #111111;
+}
+
+div.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5rem;
+}
+
+div.div-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.div-cards > .buttons-links {
+    margin: 2rem;
+    background-color: transparent;
+    color: white;
+    padding-inline: 20%;
+    border: 3px solid white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15pt;
+    padding: 4rem;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.div-cards > .buttons-links:hover {
+    transition: 0.3s;
+    color: red;
+    border: 3px solid red;
+    cursor: pointer;
+}
+
+div.div-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.div-button > button {
+    margin: 3rem;
+    padding: 10px;
+    width: 13%;
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+    font-size: 14pt;
+}
+
+div.div-button > button:hover {
+    color: #fff;
+    transition: 0.3s;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    margin: 1.5rem 1rem 0rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.tool-bar {
+    display: flex;
+    align-items: center;
+}
+
+section.tool-bar > .links {
+    background-color: transparent;
+    border: none;
+    color: rgb(155, 154, 154);
+    margin-inline: 4rem;
+    font-size: 13pt;
+}
+
+section.tool-bar > .links:hover {
+    text-decoration: underline;
+    color: white;
+    cursor: pointer;
+}
+
+section.tool-bar > img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 3px solid red;
+    cursor: pointer;
+}

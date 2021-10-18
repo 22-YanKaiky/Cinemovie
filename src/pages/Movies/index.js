@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import MOVIESAPI from "../../services/MoviesAPI";
 import Movies from "../../components/Movies";
-import Navbar from "../../components/Navbar";
-import Avatar from "../../icons/avatar.jpg";
 import axios from "axios";
 
 export default function PageMovies() {
@@ -19,10 +17,6 @@ export default function PageMovies() {
 
     return (
         <div>
-            <Navbar
-                src={Avatar}
-            />
-
             {movies.map((movie) => (
                 <Movies
                     name={movie.name}
