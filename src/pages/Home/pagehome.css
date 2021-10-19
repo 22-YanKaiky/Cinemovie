@@ -66,13 +66,6 @@ div.div-button > button:hover {
     cursor: pointer;
 }
 
-nav {
-    display: flex;
-    margin: 1.5rem 1rem 0rem 1rem;
-    justify-content: space-between;
-    align-items: center;
-}
-
 section.tool-bar {
     display: flex;
     align-items: center;
@@ -92,7 +85,7 @@ section.tool-bar > .links:hover {
     cursor: pointer;
 }
 
-.avatar {
+section.tool-bar > img {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
