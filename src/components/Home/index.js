@@ -1,10 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Animes from "../../pages/Animes";
 import Cinemovie from "../../icons/cinemovie.png";
 import Avatar from "../../icons/avatar.jpg";
+import PageHome from "../../pages/Home";
+import Animes from "../../pages/Animes";
 import Movies from "../../pages/Movies";
 import Series from "../../pages/Series";
+import Users from "../../pages/Users";
 import "./home.css";
 
 export default function Home() {
@@ -12,39 +14,27 @@ export default function Home() {
     <Router>
       <nav>
         <header>
-          <img src={Cinemovie} alt="Cinemovie" />
+          <Link className="links" exact to="/browse">
+            <img src={Cinemovie} alt="Cinemovie"/>
+          </Link>
         </header>
-        {/* <Link to="/">Home</Link> */}
         <section className="tool-bar">
           <Link className="links" exact to="/animes">Animes</Link>
           <Link className="links" exact to="/movies">Filmes</Link>
           <Link className="links" exact to="/series">Séries</Link>
 
-          <img src={Avatar} alt="Avatar" />
+          <Link className="links" exact to="/users">
+            <img className="avatar" src={Avatar} alt="Avatar" />
+          </Link>
         </section>
       </nav>
 
-      <div className="card-index">
-        {/* <div className="card-img">
-          <img src={Cinemovie} alt="Cinemovie" />
-        </div> */}
-
-        <div className="div-cards">
-          <Link className="buttons-links" exact to="/animes">Animes</Link>
-          <Link className="buttons-links" exact to="/movies">Filmes</Link>
-          <Link className="buttons-links" exact to="/series">Séries</Link>
-        </div>
-
-        <div className="div-button">
-          <button onClick={() => console.log("Sugestões")}>Sugestões</button>
-        </div>
-      </div>
-
       <Switch>
-        {/* <Route path="/" component={Home} /> */}
+        <Route path="/browse" component={PageHome} />
         <Route path="/animes" component={Animes} />
         <Route path="/movies" component={Movies} />
         <Route path="/series" component={Series} />
+        <Route path="/users" component={Users} />
       </Switch>
     </Router>
   )
