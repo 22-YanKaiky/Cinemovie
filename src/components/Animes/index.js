@@ -10,7 +10,7 @@ export default function Animes(card) {
             season = "Temporada"
         }
 
-        return `${card.seasons} ${season}` 
+        return `${card.seasons} ${season}`
     }
 
     return (

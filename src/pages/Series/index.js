@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SERIESAPI from "../../services/SeriesAPI";
 import Series from "../../components/Series";
+import Navbar from "../../components/Navbar";
 import axios from "axios";
 
 export default function PageSeries() {
@@ -16,20 +17,24 @@ export default function PageSeries() {
     }, []);
 
     return (
-        <div>
-            {series.map((serie) => (
-                <Series
-                    name={serie.name}
-                    src={serie.folder}
-                    year={serie.year}
-                    genre={serie.genre}
-                    seasons={serie.seasons}
-                    episodes={serie.episodes}
-                    direction={serie.direction}
-                    synopsis={serie.synopsis}
-                    trailer={serie.trailer}
-                />
-            ))}
-        </div>
+        <>
+            <Navbar />
+
+            <div>
+                {series.map((serie) => (
+                    <Series
+                        name={serie.name}
+                        src={serie.folder}
+                        year={serie.year}
+                        genre={serie.genre}
+                        seasons={serie.seasons}
+                        episodes={serie.episodes}
+                        direction={serie.direction}
+                        synopsis={serie.synopsis}
+                        trailer={serie.trailer}
+                    />
+                ))}
+            </div>
+        </>
     )
 }

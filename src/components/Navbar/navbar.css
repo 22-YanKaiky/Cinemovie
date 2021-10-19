@@ -78,7 +78,7 @@ section.tool-bar {
     align-items: center;
 }
 
-section.tool-bar > .links {
+section.tool-bar > p {
     background-color: transparent;
     border: none;
     color: rgb(155, 154, 154);
@@ -86,7 +86,7 @@ section.tool-bar > .links {
     font-size: 13pt;
 }
 
-section.tool-bar > .links:hover {
+section.tool-bar > p:hover {
     text-decoration: underline;
     color: white;
     cursor: pointer;
