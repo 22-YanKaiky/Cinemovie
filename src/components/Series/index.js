@@ -10,7 +10,7 @@ export default function Series(card) {
             season = "Temporada"
         }
 
-        return `${card.seasons} ${season}` 
+        return `${card.seasons} ${season}`
     }
 
     return (

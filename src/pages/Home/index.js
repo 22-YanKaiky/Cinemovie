@@ -6,7 +6,7 @@ export default function PageHome() {
     return (
         <div className="card-index">
             <div className="card-img">
-                <img src={Cinemovie} alt="Cinemovie" />
+                <img src={Cinemovie} alt="Cinemovie"/>
             </div>
 
             <div className="div-cards">

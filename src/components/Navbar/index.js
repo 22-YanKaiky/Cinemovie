@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Route, Link } from "react-router-dom";
 import Cinemovie from "../../icons/cinemovie.png";
 import Avatar from "../../icons/avatar.jpg";
 import PageHome from "../../pages/Home";
@@ -7,14 +7,13 @@ import Animes from "../../pages/Animes";
 import Movies from "../../pages/Movies";
 import Series from "../../pages/Series";
 import Users from "../../pages/Users";
-import "./home.css";
+import "./navbar.css";
 
-export default function Home() {
+export default function Navbar() {
   return (
-    <Router>
       <nav>
         <header>
-          <Link className="links" exact to="/browse">
+          <Link className="links" exact to="/">
             <img src={Cinemovie} alt="Cinemovie"/>
           </Link>
         </header>
@@ -27,15 +26,13 @@ export default function Home() {
             <img className="avatar" src={Avatar} alt="Avatar" />
           </Link>
         </section>
+        
+          <Route path="/" component={PageHome} />
+          <Route path="/animes" component={Animes} />
+          <Route path="/movies" component={Movies} />
+          <Route path="/series" component={Series} />
+          <Route path="/users" component={Users} />
       </nav>
 
-      <Switch>
-        <Route path="/browse" component={PageHome} />
-        <Route path="/animes" component={Animes} />
-        <Route path="/movies" component={Movies} />
-        <Route path="/series" component={Series} />
-        <Route path="/users" component={Users} />
-      </Switch>
-    </Router>
   )
 }

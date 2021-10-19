@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #050505;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.card-img {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 5rem;
+}
+
+div.div-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.div-cards > .buttons-links {
+  margin: 2rem;
+  background-color: transparent;
   color: white;
+  padding-inline: 20%;
+  border: 3px solid white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 15pt;
+  padding: 4rem;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+div.div-cards > .buttons-links:hover {
+  transition: 0.3s;
+  color: red;
+  border: 3px solid red;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div.div-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div.div-button > button {
+  margin: 3rem;
+  padding: 10px;
+  width: 13%;
+  background-color: transparent;
+  color: gray;
+  border: 1px solid gray;
+  font-size: 14pt;
+}
+
+div.div-button > button:hover {
+  color: #fff;
+  transition: 0.3s;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  margin: 1.5rem 1rem 0rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.tool-bar {
+  display: flex;
+  align-items: center;
+}
+
+section.tool-bar > .links {
+  background-color: transparent;
+  border: none;
+  color: rgb(155, 154, 154);
+  margin-inline: 4rem;
+  font-size: 13pt;
+}
+
+section.tool-bar > .links:hover {
+  text-decoration: underline;
+  color: white;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: 3px solid red;
+  cursor: pointer;
 }

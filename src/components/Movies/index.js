@@ -2,7 +2,6 @@ import React from "react";
 import "./movies.css";
 
 export default function Movies(card) {
-
     return (
         <div className="card">
             <header className="card-folder">
