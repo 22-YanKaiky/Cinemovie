@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Route, NavLink } from "react-router-dom";
 import Cinemovie from "../../icons/cinemovie.png";
 import Avatar from "../../icons/avatar.jpg";
-import PageHome from "../../pages/Home";
+import Home from "../../pages/Home";
 import Animes from "../../pages/Animes";
 import Movies from "../../pages/Movies";
 import Series from "../../pages/Series";
@@ -28,7 +28,7 @@ export default function Navbar() {
           </NavLink>
         </section>
         
-          <Route path="/" component={PageHome} />
+          <Route path="/" component={Home} />
           <Route path="/animes" component={Animes} />
           <Route path="/movies" component={Movies} />
           <Route path="/series" component={Series} />
