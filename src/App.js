@@ -13,7 +13,7 @@ export default function App() {
     <Router>
       <div className="card-index">
         <div className="card-img">
-          <Link className="links" exact  to="/">
+          <Link className="links" exact to="/">
             <img src={Cinemovie} alt="Cinemovie" />
           </Link>
         </div>

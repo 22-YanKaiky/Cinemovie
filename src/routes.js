@@ -8,7 +8,7 @@ import Series from "./pages/Series";
 export default function Routes() {
     return (
         <Router>
-            <Link exact to="/">Home</Link>
+            <Link exact to="/"/>
             <Link to="/animes">Animes</Link>
             <Link to="/movies">Filmes</Link>
             <Link to="/series">Séries</Link>

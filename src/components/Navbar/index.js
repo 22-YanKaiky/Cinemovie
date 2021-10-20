@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Route, Link } from "react-router-dom";
+import { BrowserRouter as Route, NavLink } from "react-router-dom";
 import Cinemovie from "../../icons/cinemovie.png";
 import Avatar from "../../icons/avatar.jpg";
 import PageHome from "../../pages/Home";
@@ -13,18 +13,19 @@ export default function Navbar() {
   return (
       <nav>
         <header>
-          <Link className="links" exact to="/">
+          <NavLink className="links" exact to="/">
             <img src={Cinemovie} alt="Cinemovie"/>
-          </Link>
+          </NavLink>
         </header>
+        
         <section className="tool-bar">
-          <Link className="links" exact to="/animes">Animes</Link>
-          <Link className="links" exact to="/movies">Filmes</Link>
-          <Link className="links" exact to="/series">Séries</Link>
+          <NavLink className="links" to="/animes">Animes</NavLink>
+          <NavLink className="links" to="/movies">Filmes</NavLink>
+          <NavLink className="links" to="/series">Séries</NavLink>
 
-          <Link className="links" exact to="/users">
+          <NavLink className="links" to="/users">
             <img className="avatar" src={Avatar} alt="Avatar" />
-          </Link>
+          </NavLink>
         </section>
         
           <Route path="/" component={PageHome} />
