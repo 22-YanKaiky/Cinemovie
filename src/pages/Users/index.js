@@ -1,7 +1,14 @@
 import React from "react";
+import Navbar from "../../components/Navbar";
 
 export default function PageUser() {
     return (
-        <h1>Usuários em Teste</h1>
+        <>
+            <Navbar />
+
+            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <h1>Usuários</h1>
+            </div>
+        </>
     )
 }

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Animes from "./pages/Animes";
 import Movies from "./pages/Movies";
 import Series from "./pages/Series";
+import Users from "./pages/Users";
 
 export default function Routes() {
     return (
@@ -13,6 +14,7 @@ export default function Routes() {
                 <Route path="/animes" component={Animes}/>
                 <Route path="/movies" component={Movies}/>
                 <Route path="/series" component={Series}/>
+                <Route path="/users" component={Users}/>
             </Switch>
         </Router>                                                                                        
     )
