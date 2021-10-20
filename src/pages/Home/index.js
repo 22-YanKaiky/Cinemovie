@@ -2,11 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Cinemovie from "../../icons/cinemovie.png";
 
-export default function PageHome() {
+export default function Home() {
     return (
         <div className="card-index">
             <div className="card-img">
-                <img src={Cinemovie} alt="Cinemovie"/>
+                <Link className="buttons-links" exact to="/">
+                    <img src={Cinemovie} alt="Cinemovie" />
+                </Link>
             </div>
 
             <div className="div-cards">
