@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #0c0b0b;
+}
+
+div.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container-index {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+div.div-container-cards {
+    display: flex;
+    justify-content: center;
+}
+
+div.div-container-cards>.buttons-links {
+    margin-inline: 1rem;
+    text-decoration: none;
+    font-size: 16pt;
+    color: white;
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 25% 50%;
+    margin: 5rem 1rem 5rem 0;
+}
+
+div.div-container-cards>.buttons-links:hover {
+    color: red;
+    border: 3px solid red;
+    transition: 0.3s;
+}
+
+div.button-suggestions>button {
+    background-color: transparent;
+    color: gray;
+    border: 1px solid gray;
+    padding: 12px;
+    font-size: 13pt;
+    width: 200px;
+}
+
+div.button-suggestions>button:hover {
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    transition: 0.3s;
+}

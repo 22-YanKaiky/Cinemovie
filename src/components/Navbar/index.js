@@ -17,6 +17,10 @@ export default function Navbar() {
             <img src={Cinemovie} alt="Cinemovie"/>
           </NavLink>
         </header>
+
+        <div className="input-search">
+          <input type="text" placeholder="Search"/>
+        </div>
         
         <section className="tool-bar">
           <NavLink className="links" to="/animes">Animes</NavLink>

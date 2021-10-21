@@ -1,14 +1,18 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
+import Avatar from "../../icons/avatar.jpg";
+import "./users.css";
 
 export default function PageUser() {
     return (
         <>
             <Navbar />
 
-            <div style={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                <h1>Usuários</h1>
-            </div>
+            <div className="container-users">
+                <div className="div-avatar ">
+                    <img src={Avatar} alt="Avatar" title="Avatar" />
+                </div>
+            </div>                
         </>
     )
 }

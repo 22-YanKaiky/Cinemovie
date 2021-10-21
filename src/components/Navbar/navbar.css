@@ -3,69 +3,6 @@
     padding: 0;
 }
 
-body {
-    background-color: #111111;
-}
-
-div.card-img {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 5rem;
-}
-
-div.div-cards {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.div-cards > .buttons-links {
-    margin: 2rem;
-    background-color: transparent;
-    color: white;
-    padding-inline: 20%;
-    border: 3px solid white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 15pt;
-    padding: 4rem;
-    width: 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div.div-cards > .buttons-links:hover {
-    transition: 0.3s;
-    color: red;
-    border: 3px solid red;
-    cursor: pointer;
-}
-
-div.div-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.div-button > button {
-    margin: 3rem;
-    padding: 10px;
-    width: 13%;
-    background-color: transparent;
-    color: gray;
-    border: 1px solid gray;
-    font-size: 14pt;
-}
-
-div.div-button > button:hover {
-    color: #fff;
-    transition: 0.3s;
-    border: 1px solid #fff;
-    cursor: pointer;
-}
-
 nav {
     display: flex;
     margin: 1.5rem 1rem 0rem 1rem;
@@ -73,12 +10,28 @@ nav {
     align-items: center;
 }
 
+div.input-search {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+div.input-search > input {
+    padding: 13px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 13pt;
+    border: 2px solid gray;
+    width: 90%;
+}
+
 section.tool-bar {
     display: flex;
     align-items: center;
 }
 
-section.tool-bar > p {
+section.tool-bar > .links {
     background-color: transparent;
     border: none;
     color: rgb(155, 154, 154);
@@ -86,7 +39,7 @@ section.tool-bar > p {
     font-size: 13pt;
 }
 
-section.tool-bar > p:hover {
+section.tool-bar > .links:hover {
     text-decoration: underline;
     color: white;
     cursor: pointer;
