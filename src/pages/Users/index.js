@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar from "../../components/Navbar";
-import Avatar from "../../icons/avatar.jpg";
+import Avatar from "../../images/avatar.jpg";
 import "./users.css";
 
 export default function PageUser() {

@@ -13,6 +13,7 @@ div.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    user-select: none;
 }
 
 div.container-index {
@@ -42,7 +43,10 @@ div.div-container-cards>.buttons-links {
 div.div-container-cards>.buttons-links:hover {
     color: red;
     border: 3px solid red;
-    transition: 0.3s;
+    transition: 0.5s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.06);
 }
 
 div.button-suggestions>button {

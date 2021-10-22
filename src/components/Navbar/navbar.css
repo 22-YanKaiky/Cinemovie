@@ -22,8 +22,13 @@ div.input-search > input {
     background-color: transparent;
     color: white;
     font-size: 13pt;
-    border: 2px solid gray;
+    border: 3px solid gray;
     width: 90%;
+}
+
+div.input-search > input:hover {
+    transition: 0.4s;
+    border-color: white;
 }
 
 section.tool-bar {
@@ -43,6 +48,17 @@ section.tool-bar > .links:hover {
     text-decoration: underline;
     color: white;
     cursor: pointer;
+    transition: 0.2s;
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.06);
+}
+
+section.tool-bar > .links:active {
+    text-decoration: red;
+    color: red;
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .avatar {

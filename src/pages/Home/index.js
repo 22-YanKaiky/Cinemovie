@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Cinemovie from "../../icons/cinemovie.png";
+import Cinemovie from "../../images/cinemovie.png";
 import "./home.css";
 
 export default function Home() {

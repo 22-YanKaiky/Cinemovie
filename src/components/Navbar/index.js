@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter as Route, NavLink } from "react-router-dom";
-import Cinemovie from "../../icons/cinemovie.png";
-import Avatar from "../../icons/avatar.jpg";
+import Cinemovie from "../../images/cinemovie.png";
+import Avatar from "../../images/avatar.jpg";
 import Home from "../../pages/Home";
 import Animes from "../../pages/Animes";
 import Movies from "../../pages/Movies";
