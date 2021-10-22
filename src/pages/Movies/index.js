@@ -3,6 +3,7 @@ import MOVIESAPI from "../../services/MoviesAPI";
 import Movies from "../../components/Movies";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
+import Footer from "../../components/Footer";
 
 export default function PageMovies() {
     const [movies, setMovies] = useState([])
@@ -34,6 +35,8 @@ export default function PageMovies() {
                     />
                 ))}
             </div>
+
+            <Footer />
         </>
     )
 }

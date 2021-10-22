@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media > a {
+    text-decoration: none;
+    color: white;
+    margin: 2rem;
+}
+
+.all-rights > a {
+    text-decoration: none;
+    color: white;
+}
+
+.all-rights > a:hover {
+    text-decoration: underline;
+}

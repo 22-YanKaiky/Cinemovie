@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ANIMESAPI from "../../services/AnimesAPI";
 import Animes from "../../components/Animes";
 import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 import axios from "axios";
 
 export default function PageAnimes() {
@@ -35,6 +36,8 @@ export default function PageAnimes() {
                     />
                 ))}
             </div>
+
+            <Footer />
         </>
     )
 }
