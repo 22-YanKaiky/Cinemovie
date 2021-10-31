@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container">
             <div className="container-index">
                 <div className="container-img">
-                    <Link className="buttons-links" exact to="/">
+                    <Link exact to="/">
                         <img src={Cinemovie} alt="Cinemovie" />
                     </Link>
                 </div>
