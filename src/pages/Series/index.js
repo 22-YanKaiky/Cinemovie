@@ -3,6 +3,7 @@ import SERIESAPI from "../../services/SeriesAPI";
 import Series from "../../components/Series";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
+import Footer from "../../components/Footer";
 
 export default function PageSeries() {
     const [series, setSeries] = useState([])
@@ -35,6 +36,8 @@ export default function PageSeries() {
                     />
                 ))}
             </div>
+
+            <Footer />
         </>
     )
 }

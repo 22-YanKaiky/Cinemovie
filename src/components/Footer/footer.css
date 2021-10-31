@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+#cinemovie-inc {
+    margin: 5rem 1rem 5rem 0;
+    text-decoration: none;
+    font-size: 16pt;
+    color: white;
+    margin-inline: 1rem;
+    border: 3px solid white;
+    border-radius: 8px;
+    padding: 25% 50%;
+}
+
+.cinemovie-inc:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+}
+
+.social-media > a {
+    text-decoration: none;
+    font-size: 15pt;
+    color: white;
+    margin: 2rem;
+}
+
+.all-rights > a {
+    text-decoration: none;
+    color: white;
+}
+
+.all-rights > a:hover {
+    text-decoration: underline;
+}
