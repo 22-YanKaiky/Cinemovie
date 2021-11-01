@@ -61,6 +61,10 @@ section.tool-bar > .links:active {
     text-decoration: underline;
 }
 
+section.tool-bar > .links:focus {
+    color: red !important;
+}
+
 .avatar {
     width: 4rem;
     height: 4rem;
