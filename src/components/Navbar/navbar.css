@@ -16,17 +16,49 @@ div.input-search {
     justify-content: center;
 }
 
-div.input-search > input {
-    padding: 13px;
+div.input-search>label {
     border-radius: 8px;
     background-color: transparent;
     color: white;
     font-size: 13pt;
+    display: flex;
+    justify-content: flex-end;
     border: 3px solid gray;
     width: 90%;
 }
 
-div.input-search > input:hover {
+div.input-search>label>input {
+    padding: 14px;
+    border-radius: 8px;
+    background-color: transparent;
+    color: white;
+    font-size: 14pt;
+    border: none;
+    width: 70%;
+}
+
+div.input-search>label>input:focus {
+    outline: none;
+}
+
+div.input-search>label>button {
+    border: none;
+    background-color: rgb(14 14 105);
+    font-size: 15pt;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 20%
+}
+
+div.input-search>label>button:hover {
+    color: white;
+    background-color: rgb(26 26 151);;
+}
+
+div.input-search>label:hover {
     transition: 0.4s;
     border-color: white;
 }
@@ -36,7 +68,7 @@ section.tool-bar {
     align-items: center;
 }
 
-section.tool-bar > .links {
+section.tool-bar>.links {
     background-color: transparent;
     border: none;
     color: rgb(155, 154, 154);
@@ -44,7 +76,7 @@ section.tool-bar > .links {
     font-size: 13pt;
 }
 
-section.tool-bar > .links:hover {
+section.tool-bar>.links:hover {
     text-decoration: underline;
     color: white;
     cursor: pointer;
@@ -54,14 +86,14 @@ section.tool-bar > .links:hover {
     transform: scale(1.06);
 }
 
-section.tool-bar > .links:active {
+section.tool-bar>.links:active {
     text-decoration: red;
     color: red;
     cursor: pointer;
     text-decoration: underline;
 }
 
-section.tool-bar > .links:focus {
+section.tool-bar>.links:focus {
     color: red !important;
 }
 

@@ -7,6 +7,7 @@ import Animes from "../../pages/Animes";
 import Movies from "../../pages/Movies";
 import Series from "../../pages/Series";
 import Users from "../../pages/Users";
+import { ImSearch } from "react-icons/im";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -19,7 +20,13 @@ export default function Navbar() {
         </header>
 
         <div className="input-search">
-          <input type="text" placeholder="Search"/>
+          <label>
+            <input type="text" placeholder="Search"/>
+
+            <button type="submit">
+              <ImSearch />
+            </button>
+          </label>
         </div>
         
         <section className="tool-bar">
