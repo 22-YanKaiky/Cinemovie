@@ -43,7 +43,7 @@ div.input-search>label>input:focus {
 
 div.input-search>label>button {
     border: none;
-    background-color: rgb(14 14 105);
+    background-color: transparent;
     font-size: 15pt;
     color: gray;
     display: flex;
@@ -55,7 +55,6 @@ div.input-search>label>button {
 
 div.input-search>label>button:hover {
     color: white;
-    background-color: rgb(26 26 151);;
 }
 
 div.input-search>label:hover {
