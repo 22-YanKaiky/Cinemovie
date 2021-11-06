@@ -30,6 +30,8 @@ div.div-container-cards {
 }
 
 div.div-container-cards>.buttons-links {
+    display: flex;
+    justify-content: center;
     margin-inline: 1rem;
     text-decoration: none;
     font-size: 16pt;
@@ -49,7 +51,7 @@ div.div-container-cards>.buttons-links:hover {
     transform: scale(1.06);
 }
 
-div.button-suggestions>button {
+div.button-suggestions > a >button {
     background-color: transparent;
     color: gray;
     border: 1px solid gray;
@@ -58,7 +60,7 @@ div.button-suggestions>button {
     width: 200px;
 }
 
-div.button-suggestions>button:hover {
+div.button-suggestions > a >button:hover {
     color: white;
     cursor: pointer;
     border: 1px solid white;

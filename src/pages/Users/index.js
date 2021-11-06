@@ -1,19 +1,20 @@
 import React from "react";
 import Footer from "../../components/Footer";
-import Navbar from "../../components/Navbar";
+import NavbarUser from "../../components/NavbarUser";
 import Avatar from "../../images/avatar.jpg";
 import "./users.css";
 
 export default function PageUser() {
     return (
         <>
-            <Navbar />
+            <NavbarUser />
 
             <div className="container-users">
                 <div className="div-avatar ">
                     <img src={Avatar} alt="Avatar" title="Avatar" />
                 </div>
             </div>
+
 
             <Footer />      
         </>

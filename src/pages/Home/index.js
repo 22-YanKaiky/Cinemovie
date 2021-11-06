@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { BiMoviePlay } from "react-icons/bi";
+import { RiPlayList2Fill } from "react-icons/ri";
+import { FiAirplay } from "react-icons/fi";
 import Cinemovie from "../../images/cinemovie.png";
 import "./home.css";
 
@@ -14,13 +17,24 @@ export default function Home() {
                 </div>
 
                 <div className="div-container-cards">
-                    <Link className="buttons-links" to="/animes">Animes</Link>
-                    <Link className="buttons-links" to="/movies">Filmes</Link>
-                    <Link className="buttons-links" to="/series">Séries</Link>
+                    <Link className="buttons-links" to="/animes">
+                        <FiAirplay />&nbsp; <span>Animes</span>
+                    </Link>
+
+                    <Link className="buttons-links" to="/movies">
+                        <BiMoviePlay />&nbsp; <span>Filmes</span>
+                    </Link>
+
+                    <Link className="buttons-links" to="/series">
+                        <RiPlayList2Fill />&nbsp; <span>Séries</span>
+                    </Link>
+
                 </div>
 
                 <div className="button-suggestions">
-                    <button onClick={() => console.log("Sugestões")}>Sugestões</button>
+                    <a href="mailto:yankaikys@gmail.com" rel="noreferrer" target="_blank">
+                        <button>Sugestões</button>
+                    </a>
                 </div>
             </div>
         </div>

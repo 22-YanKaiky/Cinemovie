@@ -10,56 +10,29 @@ nav {
     align-items: center;
 }
 
-div.input-search {
-    width: 20%;
+div.input-add {
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 
-div.input-search>label {
-    border-radius: 8px;
-    background-color: transparent;
-    color: white;
-    font-size: 13pt;
+div.input-add>button {
     display: flex;
-    justify-content: flex-end;
-    border: 3px solid gray;
-    width: 90%;
-}
-
-div.input-search>label>input {
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
     padding: 14px;
     border-radius: 8px;
-    background-color: transparent;
+    background-color: blue;
     color: white;
-    font-size: 14pt;
+    font-size: 15pt;
     border: none;
     width: 70%;
 }
 
-div.input-search>label>input:focus {
-    outline: none;
-}
-
-div.input-search>label>button {
-    border: none;
-    background-color: transparent;
-    font-size: 15pt;
-    color: gray;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 20%
-}
-
-div.input-search>label>button:hover {
-    color: white;
-}
-
-div.input-search>label:hover {
+div.input-add>button:hover {
+    background-color: rgb(44, 44, 245);
     transition: 0.4s;
-    border-color: white;
 }
 
 section.tool-bar {
