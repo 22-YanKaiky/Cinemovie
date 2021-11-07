@@ -16,7 +16,14 @@ div.input-add {
     justify-content: center;
 }
 
-div.input-add>button {
+div.input-add>.link-form {
+    width: 100%;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
+div.input-add>.link-form>button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,7 +37,7 @@ div.input-add>button {
     width: 70%;
 }
 
-div.input-add>button:hover {
+div.input-add>.link-form>button:hover {
     background-color: rgb(44, 44, 245);
     transition: 0.4s;
 }

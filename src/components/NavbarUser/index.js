@@ -20,9 +20,11 @@ export default function Navbar() {
       </header>
 
       <div className="input-add">
-        <button type="button">
-          <BsFillPlayBtnFill />&nbsp; Add Video
-        </button>
+        <NavLink className="link-form" to="/cine-form">
+          <button type="button">
+            <BsFillPlayBtnFill />&nbsp; Add Video
+          </button>
+        </NavLink>
       </div>
 
       <section className="tool-bar">
