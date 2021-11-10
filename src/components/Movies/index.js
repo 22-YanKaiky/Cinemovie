@@ -5,7 +5,9 @@ export default function Movies(card) {
     return (
         <div className="card">
             <header className="card-folder">
-                <img src={card.src} alt={card.name} />
+                <a href={card.assistir}>
+                <img  src={card.src} alt={card.name} />
+                </a>
             </header>
 
             <section className="card-information">

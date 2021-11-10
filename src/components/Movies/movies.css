@@ -23,7 +23,7 @@ div.card:hover {
     transform: scale(1.01);
 }
 
-div.card > header.card-folder > img {
+div.card > header.card-folder > a > img {
     width: 250px;
     margin: 17px;
     border-radius: 10px;

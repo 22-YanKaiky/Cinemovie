@@ -32,6 +32,7 @@ export default function PageMovies() {
                         direction={movie.direction}
                         synopsis={movie.synopsis}
                         trailer={movie.trailer}
+                        assistir={movie.link}
                     />
                 ))}
             </div>
