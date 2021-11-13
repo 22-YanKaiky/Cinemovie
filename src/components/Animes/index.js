@@ -16,11 +16,15 @@ export default function Animes(card) {
     return (
         <div className="card">
             <header className="card-folder">
-                <img src={card.src} alt={card.name} />
+                <a className="link" href={card.link}>
+                    <img src={card.src} alt={card.name} />
+                </a>
             </header>
 
             <section className="card-information">
-                <h1>{card.name}</h1>
+                <a className="link" href={card.link}>
+                    <h1>{card.name}</h1>
+                </a>
                 <p><strong>Ano: </strong>{card.year}</p>
                 <p><strong>Gênero: </strong>{card.genre} ‧ {Season()}</p>
                 <p><strong>Episódios: </strong>{card.episodes}</p>

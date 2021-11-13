@@ -24,6 +24,7 @@ export default function PageMovies() {
             <div>
                 {movies.map((movie) => (
                     <Movies
+                        link={movie.link}
                         name={movie.name}
                         src={movie.folder}
                         genre={movie.genre}
