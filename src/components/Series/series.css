@@ -3,11 +3,11 @@
     padding: 0
 }
 
-body {
+/* body {
     font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
     background-color: #0c0b0b;
     color: white;
-}
+} */
 
 div.card {
     display: flex;
