@@ -11,6 +11,10 @@ footer {
     margin: 4rem;
 }
 
+footer > p {
+    text-align: center;
+}
+
 #cinemovie-inc {
     margin: 5rem 1rem 5rem 0;
     text-decoration: none;

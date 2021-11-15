@@ -69,6 +69,7 @@ section.tool-bar {
 
 section.tool-bar>.links {
     background-color: transparent;
+    text-decoration: none;
     border: none;
     color: rgb(155, 154, 154);
     margin-inline: 4rem;
@@ -76,7 +77,6 @@ section.tool-bar>.links {
 }
 
 section.tool-bar>.links:hover {
-    text-decoration: underline;
     color: white;
     cursor: pointer;
     transition: 0.2s;

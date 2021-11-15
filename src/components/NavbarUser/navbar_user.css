@@ -56,7 +56,6 @@ section.tool-bar>.links {
 }
 
 section.tool-bar>.links:hover {
-    text-decoration: underline;
     color: white;
     cursor: pointer;
     transition: 0.2s;
