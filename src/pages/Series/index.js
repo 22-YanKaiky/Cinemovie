@@ -24,6 +24,7 @@ export default function PageSeries() {
             <div>
                 {series.map((serie) => (
                     <Series
+                        link={serie.link}
                         name={serie.name}
                         src={serie.folder}
                         year={serie.year}

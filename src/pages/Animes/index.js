@@ -33,6 +33,7 @@ export default function PageAnimes() {
                         direction={anime.direction}
                         synopsis={anime.synopsis}
                         trailer={anime.trailer}
+                        link={anime.link}
                     />
                 ))}
             </div>

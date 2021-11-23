@@ -1,65 +1,74 @@
-import React, { useRef } from "react";
-import Navbar from "../Navbar";
-import { Form } from "@unform/web"
-import Input from "../Form/Input";
+import React, { useState } from "react";
+// import AnimesAPI from "../../services/AnimesAPI";
+// import MoviesAPI from "../../services/MoviesAPI";
+import SeriesAPI from "../../services/SeriesAPI";
 import styled from "styled-components";
-import "./cineform.css";
-import Select from "../Form/Select";
+import axios from "axios";
 
 export default function CineForm() {
-    const Button = styled.button`
-        color: #fff;
-        background-color: #11e828;
-        border: none;
-        border-radius: 8px;
-        padding: 15px;
-        cursor: pointer;
-        font-size: 15pt;
-        margin-top: 2rem;
-        font-weight: 700;
-        width: 20%;
-    `;
-
-    const formRef = useRef(null);
-
-    function handleSubmit(data) {
-        if (data.name === '') {
-            formRef.current.setErrors({
-                type: 'Tipo de Video não pode ser nulo',
-                name: 'Nome não pode ser nulo',
-                src: 'Imagem não pode ser nula',
-                year: 'Ano não pode ser nulo',
-                genre: 'Genero não pode ser nulo',
-                seasons: 'Temporadas não pode ser nula',
-                episodes: 'Episodios não pode ser nulo',
-                direction: 'Direcao não pode ser nulo',
-                synopsis: 'Sinopse não pode ser nula',
-                trailer: 'Trailer não pode ser nulo'
-            })
-        }
-
-        console.log(data);
+    const listObj = {
+        type: "",
+        name: "",
+        src: "",
+        year: 0,
+        genre: "",
+        seasons: 0,
+        episodes: 0,
+        direction: "",
+        synopsis: "",
+        trailer: "",
+        link: ""
     }
 
+    const [video, setVideo] = useState(listObj)
+    
+    function onSubmit() {
+        axios.post(SeriesAPI, video)
+    }
+
+    function handleChange(event) {
+        const {name, value} = event.target;
+
+        setVideo({...video,
+            [name]: value
+        })
+
+        console.log(event.target)
+    }
+    
     return (
-        <>
-            <Navbar />
+        <form onSubmit={onSubmit}>
+            <Select onChange={handleChange} value={video.type} name="type">
+                <option disabled>Selecione</option>
+                <option value="anime">Anime</option>
+                <option value="movies">Filmes</option>
+                <option value="series">Series</option>
+            </Select>
 
-            <Form style={{ margin: "3rem" }} ref={formRef} onSubmit={handleSubmit}>
-                <Select name="type" />
+            <Input onChange={handleChange} value={video.name} name="name" placeholder="Nome"/>
+            <Input onChange={handleChange} value={video.src} name="src" placeholder="Link da Imagem"/>
+            <Input onChange={handleChange} value={video.year} name="year" placeholder="Ano"/>
+            <Input onChange={handleChange} value={video.genre} name="genre" placeholder="Genero"/>
+            <Input onChange={handleChange} value={video.seasons} name="seasons" placeholder="Temporadas"/>
+            <Input onChange={handleChange} value={video.episodes} name="episodes" placeholder="Episodios"/>
+            <Input onChange={handleChange} value={video.direction} name="direction" placeholder="Direcao"/>
+            <Input onChange={handleChange} value={video.synopsis} name="synopsis" placeholder="Sinopse"/>
+            <Input onChange={handleChange} value={video.trailer} name="trailer" placeholder="Trailer"/>
+            <Input onChange={handleChange} value={video.link} name="link" placeholder="Link do Video"/>
 
-                <Input name="name" placeholder="Nome" />
-                <Input name="src" placeholder="Imagem" />
-                <Input name="year" placeholder="Ano" type="number" />
-                <Input name="genre" placeholder="Genero" />
-                <Input name="seasons" placeholder="Temporadas" type="number" />
-                <Input name="episodes" placeholder="Episodios" type="number" />
-                <Input name="direction" placeholder="Direcao" />
-                <Input name="synopsis" placeholder="Sinopse" />
-                <Input name="trailer" placeholder="Trailer" />
-
-                <Button type="submit">Salvar</Button>
-            </Form>
-        </>
+            <Button type="submit">Enviar</Button>
+        </form>
     )
 }
+
+const Input = styled.input`
+    padding: 16px;
+`;
+
+const Select = styled.select`
+    padding: 16px;
+`;
+
+const Button = styled.button`
+    padding: 16px;
+`;

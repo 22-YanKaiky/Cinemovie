@@ -67,17 +67,6 @@ div.button-suggestions>a>button:hover {
     transition: 0.3s;
 }
 
-@media (min-width: 601px) and (max-device-width: 1000px) {
-    div.container {
-        height: 85vh;
-        display: flex;
-        background-color: blue;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
 @media (min-width: 355px) and (max-device-width: 600px) {
     div.container {
         height: 100vh;
