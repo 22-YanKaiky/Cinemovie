@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import SeriesAPI from "../../services/SeriesAPI";
 import styled from "styled-components";
 import axios from "axios";
+import { useEffect } from "react/cjs/react.development";
 
 export default function CineForm() {
     const listObj = {
@@ -22,9 +23,17 @@ export default function CineForm() {
 
     const [video, setVideo] = useState(listObj)
     
-    function onSubmit() {
-        axios.post(SeriesAPI, video)
-    }
+    useEffect(() => {
+        async function onSubmit() {
+            await axios.post(SeriesAPI, {
+                video
+            })
+
+            setVideo()
+        }
+
+        onSubmit()
+    }, [video])
 
     function handleChange(event) {
         const {name, value} = event.target;
@@ -37,7 +46,7 @@ export default function CineForm() {
     }
     
     return (
-        <form onSubmit={onSubmit}>
+        <form>
             <Select onChange={handleChange} value={video.type} name="type">
                 <option disabled>Selecione</option>
                 <option value="anime">Anime</option>
