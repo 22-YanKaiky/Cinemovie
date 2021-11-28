@@ -5,6 +5,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   background-color: #0c0b0b;
+  color: #fff;
 }
 
 code {
