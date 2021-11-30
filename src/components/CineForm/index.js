@@ -5,7 +5,7 @@ import SeriesAPI from "../../services/SeriesAPI";
 import styled from "styled-components";
 import axios from "axios";
 import { useEffect } from "react/cjs/react.development";
-
+import {videoPost} from '../../services/SeriesAPI' 
 export default function CineForm() {
     const listObj = {
         type: "",
@@ -23,16 +23,9 @@ export default function CineForm() {
 
     const [video, setVideo] = useState(listObj)
     
-    useEffect(() => {
-        async function onSubmit() {
-            await axios.post(SeriesAPI, {
-                video
-            })
-
-            setVideo()
-        }
-
-        onSubmit()
+    useEffect(async () => {
+        const response = await videoPost(video)
+        console.log(response); 
     }, [video])
 
     function handleChange(event) {
