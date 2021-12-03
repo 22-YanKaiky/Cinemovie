@@ -34,7 +34,7 @@ export default function CineForm() {
             }
         }
         fetchData();
-    }, [video]);
+    }, [video /* Variável que recebe o video */]);//video dentro de uma variável e por ela dentro deste array do useEffect
 
     function handleChange(event) {
         const { name, value } = event.target;
