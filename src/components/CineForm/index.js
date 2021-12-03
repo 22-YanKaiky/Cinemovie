@@ -29,8 +29,6 @@ export default function CineForm() {
                 const response = await axios.post(SeriesAPI, video);
                 
                 console.log(response.data);
-                
-                setVideo([...video, response.data])
             } catch (e) {
                 console.log(e.message)
             }
