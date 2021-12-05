@@ -29,7 +29,7 @@ export default function Animes(card) {
                 <p><strong>Gênero: </strong>{card.genre} ‧ {Season()}</p>
                 <p><strong>Episódios: </strong>{card.episodes}</p>
                 <p><strong>Direção: </strong>{card.direction}</p>
-                <p><strong>Sinopse: </strong>{card.synopsis}</p>
+                <p className="synopsis"><strong>Sinopse: </strong>{card.synopsis}</p>
             </section>
 
             <section className="card-trailer">
