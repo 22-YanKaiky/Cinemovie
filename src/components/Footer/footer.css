@@ -49,3 +49,9 @@ footer > p {
 .all-rights > a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 600px) {
+    div.social-media > a {
+        margin: 1rem;
+    }
+}

@@ -7,7 +7,7 @@ import Animes from "../../pages/Animes";
 import Movies from "../../pages/Movies";
 import Series from "../../pages/Series";
 import Users from "../../pages/Users";
-import { ImSearch } from "react-icons/im";
+// import { ImSearch } from "react-icons/im";
 import "./navbar.css";
 
 export default function Navbar() {
@@ -19,7 +19,7 @@ export default function Navbar() {
           </NavLink>
         </header>
 
-        <div className="input-search">
+        {/* <div className="input-search">
           <label>
             <input type="text" placeholder="Search"/>
 
@@ -27,7 +27,7 @@ export default function Navbar() {
               <ImSearch />
             </button>
           </label>
-        </div>
+        </div> */}
         
         <section className="tool-bar">
           <NavLink className="links" to="/animes">Animes</NavLink>
@@ -45,6 +45,5 @@ export default function Navbar() {
           <Route path="/series" component={Series} />
           <Route path="/users" component={Users} />
       </nav>
-
   )
 }

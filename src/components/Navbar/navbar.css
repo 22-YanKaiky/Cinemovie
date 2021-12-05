@@ -92,3 +92,65 @@ section.tool-bar>.links:hover {
     border: 3px solid red;
     cursor: pointer;
 }
+
+@media screen and (max-width: 800px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.input-search {
+        display: none;
+    }
+
+    section.tool-bar {
+        display: flex;
+    }
+
+    section.tool-bar>.links {
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        color: rgb(155, 154, 154);
+        font-size: 13pt;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav > header > .links {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav > header > .links > img {
+        width: 50%;
+    }
+
+    div.input-search {
+        display: none;
+    }
+
+    section.tool-bar {
+        display: grid;
+        grid-template-columns: 5rem 5rem 5rem 12rem;
+    }
+
+    section.tool-bar>.links {
+        background-color: transparent;
+        text-decoration: none;
+        border: none;
+        color: rgb(155, 154, 154);
+        font-size: 12pt;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+}
