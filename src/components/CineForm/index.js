@@ -6,7 +6,7 @@ import styled from "styled-components";
 import axios from "axios";
 
 export default function CineForm() {
-    let videoObj = {
+    const videoObj = {
         type: '',
         name: '',
         src: '',
@@ -22,19 +22,20 @@ export default function CineForm() {
     }
 
     const [video, setVideo] = useState(videoObj);
-    
+        
     useEffect(() => {
         async function fetchData() {
             try {
                 const response = await axios.post(SeriesAPI, video);
-                
+
                 console.log(response.data);
             } catch (e) {
                 console.log(e.message)
             }
         }
+
         fetchData();
-    }, [video /* Variável que recebe o video */]);//video dentro de uma variável e por ela dentro deste array do useEffect
+    }, [video]);
 
     function handleChange(event) {
         const { name, value } = event.target;
@@ -47,7 +48,6 @@ export default function CineForm() {
 
         console.log(event.target)
     }
-
 
     return (
         <form>
@@ -70,7 +70,7 @@ export default function CineForm() {
             <Input onChange={handleChange} value={video.trailer} name="trailer" placeholder="Trailer" />
             <Input onChange={handleChange} value={video.link} name="link" placeholder="Link do Video" />
 
-            <Button onSubmit={setVideo} type="submit">Enviar</Button>
+            <Button onChange={setVideo} type="submit">Enviar</Button>
         </form>
     )
 }
