@@ -51,6 +51,9 @@ div.card > section.card-information {
 }
 
 div.card > section.card-information > a.link > h1 {
+    background: -webkit-linear-gradient(#ff0000, #800000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20pt;
     text-align: center;
 }
@@ -93,6 +96,10 @@ div.card > section.card-trailer {
     div.card > section.card-information > .synopsis {
         margin-left: -11rem;
     }
+
+    div.card > section.card-information > a.link {
+        margin-bottom: 1rem;
+    }
     
     div.card > section.card-information > a.link > h1 {
         font-size: 20pt;
@@ -122,6 +129,10 @@ div.card > section.card-trailer {
         position: absolute;
     }
 
+    div.card > header.card-folder > a.link {
+        margin-bottom: 1rem;
+    }
+    
     div.card > header.card-folder > a.link > img {
         width: 9rem !important;
         margin: 10px;
@@ -135,7 +146,6 @@ div.card > section.card-trailer {
 
     div.card > section.card-information > .synopsis {
         margin-left: -10rem;
-        margin-top: 2.5rem !important;
     }
     
     div.card > section.card-information > a.link > h1 {
