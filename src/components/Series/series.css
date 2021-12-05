@@ -51,6 +51,9 @@ div.card > section.card-information {
 }
 
 div.card > section.card-information > a.link > h1 {
+    background: -webkit-linear-gradient(#ff0000, #800000);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 20pt;
     text-align: center;
 }
