@@ -128,7 +128,7 @@ section.tool-bar>.links:hover {
     }
 
     nav > header > .links > img {
-        width: 50%;
+        width: 60%;
     }
 
     div.input-search {
@@ -137,7 +137,7 @@ section.tool-bar>.links:hover {
 
     section.tool-bar {
         display: grid;
-        grid-template-columns: 5rem 5rem 5rem 12rem;
+        grid-template-columns: 7rem 7rem 7rem 10rem;
     }
 
     section.tool-bar>.links {
@@ -150,7 +150,7 @@ section.tool-bar>.links:hover {
     }
 
     .avatar {
-        width: 2.4rem;
-        height: 2.4rem;
+        width: 3rem;
+        height: 3rem;
     }
 }
