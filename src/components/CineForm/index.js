@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import AnimesAPI from "../../services/AnimesAPI";
 // import MoviesAPI from "../../services/MoviesAPI";
 import SeriesAPI from "../../services/SeriesAPI";
@@ -22,21 +22,6 @@ export default function CineForm() {
     }
 
     const [video, setVideo] = useState(videoObj);
-    // const [loading, setLoading] = useState(false);
-
-    useEffect(() => {
-        async function fetchData() {
-            try {
-                const result = await axios.post(SeriesAPI, video);
-
-                console.log(result.data);
-            } catch (e) {
-                console.log(e.message)
-            }
-        }
-
-        fetchData();
-    }, []);
 
     const setInput = (event) => {
         const { name, value } = event.target;
@@ -50,8 +35,28 @@ export default function CineForm() {
         console.log(event.target)
     }
 
+    const [sending, setSending] = useState(false);
+
+    const sendRequest = async () => {
+        if (sending) return;
+        setSending(true);
+        const videoReq = {
+            ...video,
+        };
+
+        await axios.post(SeriesAPI, videoReq);
+
+        setSending(false);
+    }
+
     return (
-        <form>
+        <form
+            onChange={setInput}
+            onSubmit={(e) => {
+                e.preventDefault();
+                sendRequest();
+            }}
+        >
             <Select onChange={setInput} value={video.type} name="type">
                 <option disabled>Selecione</option>
                 <option value="anime">Anime</option>
