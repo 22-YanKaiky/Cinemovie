@@ -12,11 +12,11 @@ export default function Footer() {
     return (
         <footer>
             <p className="all-rights">
-                &copy; 2021&nbsp; 
+                &copy; 2021&nbsp;
                 <Link className="cinemovie-inc" exact to="/">
-                Cinemovie, Inc.
+                    Cinemovie, Inc.
                 </Link>
-                &nbsp;All rights reserveds <a href="https://www.linkedin.com/in/yan-kaiky-augusto-dos-santos-652418186/" rel="noreferrer" target="_blank">Yan Kaiky.</a>
+                &nbsp;Some rights reserveds <a href="https://www.linkedin.com/in/yan-kaiky-augusto-dos-santos-652418186/" rel="noreferrer" target="_blank">Yan Kaiky.</a>
             </p>
 
             <div className="social-media">

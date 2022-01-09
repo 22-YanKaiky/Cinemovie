@@ -50,45 +50,106 @@ export default function CineForm() {
     }
 
     return (
-        <form
+        <Form
             onChange={setInput}
             onSubmit={(e) => {
                 e.preventDefault();
                 sendRequest();
             }}
         >
-            <Select onChange={setInput} value={video.type} name="type">
-                <option disabled>Selecione</option>
-                <option value="anime">Anime</option>
-                <option value="movies">Filmes</option>
-                <option value="series">Series</option>
-            </Select>
+            <Div>
 
-            <Input onChange={setInput} value={video.name} name="name" placeholder="Nome" />
-            <Input onChange={setInput} value={video.src} name="src" placeholder="Link da Imagem" />
-            <Input onChange={setInput} value={video.year} name="year" placeholder="Ano" />
-            <Input onChange={setInput} value={video.genre} name="genre" placeholder="Genero" />
-            <Input onChange={setInput} value={video.seasons} name="seasons" placeholder="Temporadas" />
-            <Input onChange={setInput} value={video.episodes} name="episodes" placeholder="Episodios" />
-            <Input onChange={setInput} value={video.folder} name="folder" placeholder="Folder" />
-            <Input onChange={setInput} value={video.direction} name="direction" placeholder="Direcao" />
-            <Input onChange={setInput} value={video.synopsis} name="synopsis" placeholder="Sinopse" />
-            <Input onChange={setInput} value={video.trailer} name="trailer" placeholder="Trailer" />
-            <Input onChange={setInput} value={video.link} name="link" placeholder="Link do Video" />
+                <Select onChange={setInput} value={video.type} name="type">
+                    <option disabled>Selecione</option>
+                    <option value="anime">Anime</option>
+                    <option value="movies">Filmes</option>
+                    <option value="series">Series</option>
+                </Select>
+            </Div>
 
-            <Button type="submit">Enviar</Button>
-        </form>
+            <Div>
+                <Input onChange={setInput} value={video.name} name="name" placeholder="Nome" />
+                <Input onChange={setInput} value={video.src} name="src" placeholder="Link da Imagem" />
+            </Div>
+            <Div>
+                <Input onChange={setInput} value={video.year} name="year" type="number" placeholder="Ano de Lançamento" />
+                <Input onChange={setInput} value={video.genre} name="genre" placeholder="Gênero" />
+            </Div>
+            <Div>
+                <Input onChange={setInput} value={video.seasons} name="seasons" type="number" placeholder="Temporadas" />
+                <Input onChange={setInput} value={video.episodes} name="episodes" type="number" placeholder="Episódios" />
+            </Div>
+            <Div>
+                <Input onChange={setInput} value={video.folder} name="folder" placeholder="Folder" />
+                <Input onChange={setInput} value={video.direction} name="direction" placeholder="Direção" />
+            </Div>
+            <Div>
+                <TextArea rows={4} onChange={setInput} value={video.synopsis} name="synopsis" placeholder="Sinopse" />
+            </Div>
+            <Div>
+                <Input onChange={setInput} value={video.trailer} name="trailer" placeholder="Trailer" />
+                <Input onChange={setInput} value={video.link} name="link" placeholder="Link do Vídeo" />
+            </Div>
+
+            <Div>
+                <Button type="submit">Enviar</Button>
+            </Div>
+        </Form>
     )
 }
 
-const Input = styled.input`
-    padding: 16px;
+const Form = styled.form`
+    margin: 15px;
+    justify-content: center;
+`;
+
+const Div = styled.div`
+    display: flex;
+    justify-content: space-around;
 `;
 
 const Select = styled.select`
     padding: 16px;
+    margin: 6px;
+    font-size: 14pt;
+    background-color: #282727;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+`;
+
+const Input = styled.input`
+    padding: 16px;
+    margin: 6px;
+    font-size: 14pt;    
+    background-color: transparent;
+    color: white;
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 95%;
+`;
+
+const TextArea = styled.textarea`
+    padding: 16px;
+    margin: 6px;
+    font-size: 12pt;    
+    background-color: transparent;
+    color: white;
+    resize: none;
+    border: 3px solid red;
+    border-radius: 8px;
+    width: 100%;
 `;
 
 const Button = styled.button`
     padding: 16px;
+    margin-top: 2rem;
+    font-size: 16pt;    
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 40%;
 `;
