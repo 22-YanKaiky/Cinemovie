@@ -9,14 +9,17 @@ export default function PageUser() {
         <>
             <NavbarUser />
 
-            <div className="container-users">
-                <div className="div-avatar ">
-                    <img src={Avatar} alt="Avatar" title="Avatar" />
-                </div>
+            <div className="img">
+                <section>
+                    <img src={Avatar} />
+                </section>
             </div>
 
+            <div className="information">
+                <h1>Yan Kaiky</h1>
+            </div>
 
-            <Footer />      
+            <Footer />
         </>
     )
 }

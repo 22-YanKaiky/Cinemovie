@@ -23,10 +23,6 @@ export default function Navbar() {
         <NavLink className="links" to="/animes">Animes</NavLink>
         <NavLink className="links" to="/movies">Filmes</NavLink>
         <NavLink className="links" to="/series">Séries</NavLink>
-
-        <NavLink className="links" to="/users">
-          <img className="avatar" src={Avatar} alt="Avatar" />
-        </NavLink>
       </section>
 
       <div className="input-add">
