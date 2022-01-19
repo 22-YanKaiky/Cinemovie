@@ -113,6 +113,7 @@ section.tool-bar>.links:hover {
         border: none;
         color: rgb(155, 154, 154);
         font-size: 13pt;
+        margin-inline: 0;
     }
 }
 
@@ -122,12 +123,12 @@ section.tool-bar>.links:hover {
         flex-direction: column;
     }
 
-    nav > header > .links {
+    nav>header>.links {
         display: flex;
         justify-content: center;
     }
 
-    nav > header > .links > img {
+    nav>header>.links>img {
         width: 60%;
     }
 
@@ -137,7 +138,7 @@ section.tool-bar>.links:hover {
 
     section.tool-bar {
         display: grid;
-        grid-template-columns: 7rem 7rem 7rem 10rem;
+        grid-template-columns: 6rem 6rem 6rem 7rem;
     }
 
     section.tool-bar>.links {

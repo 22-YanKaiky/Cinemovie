@@ -17,7 +17,7 @@ export default function Series(card) {
         <div className="card">
             <header className="card-folder">
                 <a className="link" href={card.link}>
-                    <img src={card.src} alt={card.name} />
+                    <img src={card.folder} alt={card.name} />
                 </a>
             </header>
 
