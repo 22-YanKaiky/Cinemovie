@@ -20,20 +20,21 @@ export default function CineForm() {
         link: '',
     }
 
-    // const movieObj = {
-    //     type: '',
-    //     name: '',
-    //     genre: '',
-    //     year: '',
-    //     time: '',
-    //     folder: '',
-    //     direction: '',
-    //     synopsis: '',
-    //     trailer: '',
-    //     link: '',
-    // }
+    const movieObj = {
+        type: '',
+        name: '',
+        genre: '',
+        year: '',
+        time: '',
+        folder: '',
+        direction: '',
+        synopsis: '',
+        trailer: '',
+        link: '',
+    }
 
-    const [video, setVideo] = useState(animeSerieObj);
+    const [videoObj, setVideoObj] = useState({});
+    const [video, setVideo] = useState(videoObj);
     const [api, setApi] = useState();
 
     const setInput = (event) => {
@@ -44,10 +45,20 @@ export default function CineForm() {
         };
 
         if (value === 'anime') {
+            setVideoObj(animeSerieObj)
+            console.log(videoObj)
             setApi(AnimesAPI);
-        } else if (value === 'movies') {
+        }
+
+        if (value === 'movies') {
+            setVideoObj(movieObj)
+            console.log(videoObj)
             setApi(MoviesAPI)
-        } else {
+        }
+
+        if (value === 'series') {
+            setVideoObj(animeSerieObj)
+            console.log(videoObj)
             setApi(SeriesAPI);
         }
 
