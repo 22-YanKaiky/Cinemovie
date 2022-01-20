@@ -19,14 +19,6 @@ export default function Navbar() {
         </NavLink>
       </header>
 
-      <div className="input-add">
-        <NavLink className="link-form" to="/cine-form">
-          <button type="button">
-            <BsFillPlayBtnFill />&nbsp; Add Video
-          </button>
-        </NavLink>
-      </div>
-
       <section className="tool-bar">
         <NavLink className="links" to="/animes">Animes</NavLink>
         <NavLink className="links" to="/movies">Filmes</NavLink>
@@ -36,6 +28,14 @@ export default function Navbar() {
           <img className="avatar" src={Avatar} alt="Avatar" />
         </NavLink>
       </section>
+
+      <div className="input-add">
+        <NavLink className="link-form" to="/cine-form">
+          <button type="button">
+            <BsFillPlayBtnFill />&nbsp; Add Video
+          </button>
+        </NavLink>
+      </div>
 
       <Route path="/" component={Home} />
       <Route path="/animes" component={Animes} />

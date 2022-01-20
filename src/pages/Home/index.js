@@ -32,7 +32,7 @@ export default function Home() {
                 </div>
 
                 <div className="button-suggestions">
-                    <a href='mailto:yankaikys@gmail.com?subject=Nome do Video' rel="noreferrer" target="_blank">
+                    <a href='mailto:yankaikys@gmail.com' rel="noreferrer" target="_blank">
                         <button>Sugestões</button>
                     </a>
                 </div>

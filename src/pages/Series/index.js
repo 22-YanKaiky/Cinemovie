@@ -26,7 +26,7 @@ export default function PageSeries() {
                     <Series
                         link={serie.link}
                         name={serie.name}
-                        src={serie.folder}
+                        folder={serie.folder}
                         year={serie.year}
                         genre={serie.genre}
                         seasons={serie.seasons}
