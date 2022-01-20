@@ -2,22 +2,26 @@ import React from "react";
 import Footer from "../../components/Footer";
 import NavbarUser from "../../components/NavbarUser";
 import Avatar from "../../images/avatar.jpg";
-import "./users.css";
+import { Div, Section, Card } from './styles';
 
 export default function PageUser() {
     return (
         <>
             <NavbarUser />
 
-            <div className="img">
-                <section>
+            <Div>
+                <Card>
                     <img src={Avatar} />
-                </section>
-            </div>
 
-            <div className="information">
-                <h1>Yan Kaiky</h1>
-            </div>
+                    <h1>Yan Kaiky</h1>
+                </Card>
+
+                <Section>
+                    <img src={Avatar} />
+
+                    <h1>Yan Kaiky</h1>
+                </Section>
+            </Div>
 
             <Footer />
         </>
