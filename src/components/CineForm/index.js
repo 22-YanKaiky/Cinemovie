@@ -46,19 +46,16 @@ export default function CineForm() {
 
         if (value === 'anime') {
             setVideoObj(animeSerieObj)
-            console.log(videoObj)
             setApi(AnimesAPI);
         }
 
         if (value === 'movies') {
             setVideoObj(movieObj)
-            console.log(videoObj)
             setApi(MoviesAPI)
         }
 
         if (value === 'series') {
             setVideoObj(animeSerieObj)
-            console.log(videoObj)
             setApi(SeriesAPI);
         }
 
@@ -78,8 +75,6 @@ export default function CineForm() {
 
         setSending(false);
     }
-
-    console.log(video.type)
 
     return (
         <Form
