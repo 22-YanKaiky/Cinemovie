@@ -5,7 +5,7 @@ import Animes from "./pages/Animes";
 import Movies from "./pages/Movies";
 import Series from "./pages/Series";
 import Users from "./pages/Users";
-// import CineForm from "./pages/CineForm";
+import CineForm from "./pages/CineForm";
 
 export default function Routes() {
     return (
@@ -16,7 +16,7 @@ export default function Routes() {
                 <Route path="/movies" component={Movies}/>
                 <Route path="/series" component={Series}/>
                 <Route path="/users" component={Users}/>
-                {/* <Route path="/cine-form" component={CineForm}/> */}
+                <Route path="/cine-form" component={CineForm}/>
             </Switch>
         </Router>                                                                                        
     )
