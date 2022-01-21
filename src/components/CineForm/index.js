@@ -89,7 +89,7 @@ export default function CineForm() {
                     <option selected>- Selecione -</option>
                     <option value="anime">Anime</option>
                     <option value="movies">Filmes</option>
-                    <option value="series">Series</option>
+                    <option value="series">Séries</option>
                 </Select>
             </Div>
 
