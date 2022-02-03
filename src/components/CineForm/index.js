@@ -64,12 +64,21 @@ export default function CineForm() {
 
     const [sending, setSending] = useState(false);
 
+    const trailerFormat = (val) => {
+        const link = val.split('/')[3]
+
+        return `https://www.youtube.com/embed/${link}`
+    }
+
     const sendRequest = async () => {
         if (sending) return;
         setSending(true);
         const videoReq = {
             ...video,
+            trailer: trailerFormat(video.trailer)
         };
+
+        console.log('videoReq', videoReq)
 
         await axios.post(api, videoReq);
 
